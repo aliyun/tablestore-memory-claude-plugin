@@ -1,0 +1,9 @@
+{
+  "name": "tablestore-memory",
+  "description": "Long-term memory for Claude Code backed by Alibaba Cloud Tablestore memory service: automatic retrieval, writeback, and Dream consolidation, plus MCP tools, slash commands, and a CLI.",
+  "version": "0.1.0",
+  "author": { "name": "tablestore" },
+  "homepage": "https://github.com/yunjinlxp/tablestore-memory-claude-plugin",
+  "repository": "https://github.com/yunjinlxp/tablestore-memory-claude-plugin",
+  "keywords": ["memory", "tablestore", "alibabacloud", "ots", "mcp"]
+}

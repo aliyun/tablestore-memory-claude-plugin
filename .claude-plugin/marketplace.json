@@ -1,0 +1,12 @@
+{
+  "name": "tablestore-memory-marketplace",
+  "description": "Marketplace hosting the tablestore-memory plugin for Claude Code.",
+  "owner": { "name": "tablestore" },
+  "plugins": [
+    {
+      "name": "tablestore-memory",
+      "source": "./",
+      "description": "Long-term memory for Claude Code backed by Alibaba Cloud Tablestore memory service."
+    }
+  ]
+}

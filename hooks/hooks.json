@@ -1,0 +1,14 @@
+{
+  "description": "Tablestore memory: auto-retrieval (UserPromptSubmit), writeback (Stop), Dream consolidation (SessionEnd).",
+  "hooks": {
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/hooks/retrieve.mjs\"", "timeout": 30 } ] }
+    ],
+    "Stop": [
+      { "hooks": [ { "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/hooks/writeback.mjs\"", "timeout": 30 } ] }
+    ],
+    "SessionEnd": [
+      { "hooks": [ { "type": "command", "command": "node \"${CLAUDE_PLUGIN_ROOT}/dist/hooks/consolidate.mjs\"", "timeout": 30 } ] }
+    ]
+  }
+}

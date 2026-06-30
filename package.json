@@ -1,0 +1,33 @@
+{
+  "name": "tablestore-memory",
+  "version": "0.1.0",
+  "description": "Claude Code memory plugin backed by Alibaba Cloud Tablestore memory service",
+  "type": "module",
+  "license": "MIT",
+  "author": "tablestore",
+  "homepage": "https://github.com/yunjinlxp/tablestore-memory-claude-plugin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunjinlxp/tablestore-memory-claude-plugin.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "tablestore-memory": "dist/cli.mjs"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "check": "for f in $(git ls-files '*.mjs' | grep -v '^dist/'); do node --check \"$f\" || exit 1; done",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@tablestore/agent-storage": "^0.0.8",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}
