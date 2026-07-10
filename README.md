@@ -20,16 +20,16 @@
 
 ## 安装
 
-仓库：`https://github.com/yunjinlxp/tablestore-memory-claude-plugin`
+仓库：`https://github.com/aliyun/tablestore-memory-claude-plugin`
 依赖已用 esbuild 打包进 `dist/`（随仓库发布），**终端用户无需 `npm install`**。
 
 ```bash
 # 方式一（推荐）：从 GitHub marketplace 安装
-claude plugin marketplace add yunjinlxp/tablestore-memory-claude-plugin
+claude plugin marketplace add aliyun/tablestore-memory-claude-plugin
 claude plugin install tablestore-memory@tablestore-memory-marketplace
 
 # 方式二：克隆后从本地目录安装
-git clone https://github.com/yunjinlxp/tablestore-memory-claude-plugin.git
+git clone https://github.com/aliyun/tablestore-memory-claude-plugin.git
 claude plugin marketplace add ./tablestore-memory-claude-plugin
 claude plugin install tablestore-memory@tablestore-memory-marketplace
 

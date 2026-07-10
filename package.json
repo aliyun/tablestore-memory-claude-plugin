@@ -5,10 +5,10 @@
   "type": "module",
   "license": "MIT",
   "author": "tablestore",
-  "homepage": "https://github.com/yunjinlxp/tablestore-memory-claude-plugin",
+  "homepage": "https://github.com/aliyun/tablestore-memory-claude-plugin",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yunjinlxp/tablestore-memory-claude-plugin.git"
+    "url": "git+https://github.com/aliyun/tablestore-memory-claude-plugin.git"
   },
   "engines": {
     "node": ">=18.0.0"
