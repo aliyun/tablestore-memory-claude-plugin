@@ -23,7 +23,7 @@
     "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@modelcontextprotocol/sdk": "^1.32.0",
     "@tablestore/agent-storage": "^0.0.8",
     "zod": "^4.4.3"
   },
